@@ -1,0 +1,139 @@
+---- Minecraft Crash Report ----
+// You should try our sister game, Minceraft!
+
+Time: 2024-10-22 09:37:44
+Description: Mod loading failures have occurred; consult the issue messages for more details
+
+net.neoforged.neoforge.logging.CrashReportExtender$ModLoadingCrashException: Mod loading has failed
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: main
+Stacktrace:
+	at TRANSFORMER/distanthorizons@2.2.1-a/com.seibel.distanthorizons.core.config.eventHandlers.presets.AbstractPresetConfigEventHandler.<init>(AbstractPresetConfigEventHandler.java:60) ~[DistantHorizons-2.2.1-a-1.21.1-neo-fabric.jar%23141!/:?] {re:classloading}
+-- Mod loading issue for: distanthorizons --
+Details:
+	Caused by 0: java.lang.ExceptionInInitializerError
+		at TRANSFORMER/distanthorizons@2.2.1-a/loaderCommon.neoforge.com.seibel.distanthorizons.common.AbstractModInitializer.onInitializeServer(AbstractModInitializer.java:99) ~[DistantHorizons-2.2.1-a-1.21.1-neo-fabric.jar%23141!/:?] {re:classloading}
+		at TRANSFORMER/distanthorizons@2.2.1-a/com.seibel.distanthorizons.neoforge.NeoforgeMain.lambda$new$1(NeoforgeMain.java:63) ~[DistantHorizons-2.2.1-a-1.21.1-neo-fabric.jar%23141!/:?] {re:classloading}
+		at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.ConsumerEventHandler.invoke(ConsumerEventHandler.java:26) ~[bus-8.0.2.jar%2367!/:?] {}
+		at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:350) ~[bus-8.0.2.jar%2367!/:?] {}
+		at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:315) ~[bus-8.0.2.jar%2367!/:?] {}
+		at MC-BOOTSTRAP/fml_loader@4.0.29/net.neoforged.fml.ModContainer.acceptEvent(ModContainer.java:158) ~[loader-4.0.29.jar%2360!/:4.0] {}
+		at MC-BOOTSTRAP/fml_loader@4.0.29/net.neoforged.fml.ModLoader.lambda$dispatchParallelEvent$4(ModLoader.java:172) ~[loader-4.0.29.jar%2360!/:4.0] {}
+		at MC-BOOTSTRAP/fml_loader@4.0.29/net.neoforged.fml.ModLoader.lambda$dispatchParallelTask$7(ModLoader.java:231) ~[loader-4.0.29.jar%2360!/:4.0] {}
+		at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[?:?] {re:mixin}
+		at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[?:?] {}
+		at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483) ~[?:?] {}
+		at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) ~[?:?] {}
+		at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312) ~[?:?] {}
+		at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) ~[?:?] {re:computing_frames}
+		at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) ~[?:?] {re:computing_frames}
+		at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) ~[?:?] {}
+
+	Mod file: /C:/Users/hugop/OneDrive/SEPARADO DE MUITO TEMPO ATRAS/Documents/Servidor NeoForge Mods/server/mods/DistantHorizons-2.2.1-a-1.21.1-neo-fabric.jar
+	Failure message: Distant Horizons (distanthorizons) encountered an error while dispatching the net.neoforged.fml.event.lifecycle.FMLDedicatedServerSetupEvent event
+		java.lang.ExceptionInInitializerError: null
+	Mod version: 2.2.1-a
+	Mod issues URL: https://gitlab.com/jeseibel/distant-horizons/-/issues
+	Exception message: java.lang.NullPointerException: Cannot invoke "com.seibel.distanthorizons.core.wrapperInterfaces.config.IConfigGui.addOnScreenChangeListener(java.lang.Runnable)" because "com.seibel.distanthorizons.core.config.eventHandlers.presets.AbstractPresetConfigEventHandler.configGui" is null
+Stacktrace:
+	at TRANSFORMER/distanthorizons@2.2.1-a/com.seibel.distanthorizons.core.config.eventHandlers.presets.AbstractPresetConfigEventHandler.<init>(AbstractPresetConfigEventHandler.java:60) ~[DistantHorizons-2.2.1-a-1.21.1-neo-fabric.jar%23141!/:?] {re:classloading}
+	at TRANSFORMER/distanthorizons@2.2.1-a/com.seibel.distanthorizons.core.config.eventHandlers.presets.ThreadPresetConfigEventHandler.<init>(ThreadPresetConfigEventHandler.java:138) ~[DistantHorizons-2.2.1-a-1.21.1-neo-fabric.jar%23141!/:?] {re:classloading}
+	at TRANSFORMER/distanthorizons@2.2.1-a/com.seibel.distanthorizons.core.config.eventHandlers.presets.ThreadPresetConfigEventHandler.<clinit>(ThreadPresetConfigEventHandler.java:37) ~[DistantHorizons-2.2.1-a-1.21.1-neo-fabric.jar%23141!/:?] {re:classloading}
+	at TRANSFORMER/distanthorizons@2.2.1-a/loaderCommon.neoforge.com.seibel.distanthorizons.common.AbstractModInitializer.onInitializeServer(AbstractModInitializer.java:99) ~[DistantHorizons-2.2.1-a-1.21.1-neo-fabric.jar%23141!/:?] {re:classloading}
+	at TRANSFORMER/distanthorizons@2.2.1-a/com.seibel.distanthorizons.neoforge.NeoforgeMain.lambda$new$1(NeoforgeMain.java:63) ~[DistantHorizons-2.2.1-a-1.21.1-neo-fabric.jar%23141!/:?] {re:classloading}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.ConsumerEventHandler.invoke(ConsumerEventHandler.java:26) ~[bus-8.0.2.jar%2367!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:350) ~[bus-8.0.2.jar%2367!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:315) ~[bus-8.0.2.jar%2367!/:?] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.29/net.neoforged.fml.ModContainer.acceptEvent(ModContainer.java:158) ~[loader-4.0.29.jar%2360!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.29/net.neoforged.fml.ModLoader.lambda$dispatchParallelEvent$4(ModLoader.java:172) ~[loader-4.0.29.jar%2360!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.29/net.neoforged.fml.ModLoader.lambda$dispatchParallelTask$7(ModLoader.java:231) ~[loader-4.0.29.jar%2360!/:4.0] {}
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[?:?] {re:mixin}
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[?:?] {}
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483) ~[?:?] {}
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) ~[?:?] {}
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312) ~[?:?] {}
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) ~[?:?] {re:computing_frames}
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) ~[?:?] {re:computing_frames}
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) ~[?:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.1
+	Minecraft Version ID: 1.21.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.5, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 583367712 bytes (556 MiB) / 1040187392 bytes (992 MiB) up to 5289017344 bytes (5044 MiB)
+	CPUs: 8
+	Processor Vendor: GenuineIntel
+	Processor Name: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+	Identifier: Intel64 Family 6 Model 140 Stepping 1
+	Microarchitecture: Tiger Lake
+	Frequency (GHz): 2.42
+	Number of physical packages: 1
+	Number of physical CPUs: 4
+	Number of logical CPUs: 8
+	Graphics card #0 name: Intel(R) Iris(R) Xe Graphics
+	Graphics card #0 vendor: Intel Corporation
+	Graphics card #0 VRAM (MiB): 1024.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 30.0.101.3111
+	Memory slot #0 capacity (MiB): 4096.00
+	Memory slot #0 clockSpeed (GHz): 3.20
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MiB): 16384.00
+	Memory slot #1 clockSpeed (GHz): 3.20
+	Memory slot #1 type: DDR4
+	Virtual memory max (MiB): 40654.48
+	Virtual memory used (MiB): 25900.60
+	Swap memory total (MiB): 20480.00
+	Swap memory used (MiB): 569.58
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 128416.64, total: 457038.00
+	Space in storage for workdir (MiB): available: 128416.64, total: 457038.00
+	JVM Flags: 0 total; 
+	ModLauncher: 11.0.4+main.d2e20e43
+	ModLauncher launch target: forgeserver
+	ModLauncher services: 
+		sponge-mixin-0.15.2+mixin.0.8.7.jar mixin PLUGINSERVICE 
+		loader-4.0.29.jar slf4jfixer PLUGINSERVICE 
+		loader-4.0.29.jar runtime_enum_extender PLUGINSERVICE 
+		at-modlauncher-10.0.1.jar accesstransformer PLUGINSERVICE 
+		loader-4.0.29.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-11.0.4.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-11.0.4.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		javafml@4.0
+		lowcodefml@4.0
+		minecraft@4.0
+	Mod List: 
+		armourersworkshop-forge-1.21.1-3.0.0-beta.21.jar  |Armourer's Workshop           |armourers_workshop            |3.0.0-beta.21       |Manifest: 58:d0:3b:4b:a0:4b:43:fb:59:0f:27:f5:39:d5:65:de:9a:24:ee:2e:15:48:b1:4f:78:1a:e1:ef:cd:a4:d9:0a
+		ars_elemental-1.21.0-0.7.0.7.jar                  |Ars Elemental                 |ars_elemental                 |0.7.0.7             |Manifest: NOSIGNATURE
+		ars_nouveau-1.21.1-5.2.1-all.jar                  |Ars Nouveau                   |ars_nouveau                   |5.2.1               |Manifest: NOSIGNATURE
+		balm-neoforge-1.21.1-21.0.20.jar                  |Balm                          |balm                          |21.0.20             |Manifest: NOSIGNATURE
+		curios-neoforge-9.0.14+1.21.1.jar                 |Curios API                    |curios                        |9.0.14+1.21.1       |Manifest: NOSIGNATURE
+		DistantHorizons-2.2.1-a-1.21.1-neo-fabric.jar     |Distant Horizons              |distanthorizons               |2.2.1-a             |Manifest: NOSIGNATURE
+		geckolib-neoforge-1.21.1-4.6.5.jar                |GeckoLib 4                    |geckolib                      |4.6.5               |Manifest: NOSIGNATURE
+		handcrafted-neoforge-1.21.1-4.0.2.jar             |Handcrafted                   |handcrafted                   |4.0.2               |Manifest: NOSIGNATURE
+		jei-1.21.1-neoforge-19.21.0.245.jar               |Just Enough Items             |jei                           |19.21.0.245         |Manifest: NOSIGNATURE
+		kuma-api-neoforge-21.0.5-SNAPSHOT.jar             |KumaAPI                       |kuma_api                      |21.0.5-SNAPSHOT     |Manifest: NOSIGNATURE
+		server-1.21.1-20240808.144430-srg.jar             |Minecraft                     |minecraft                     |1.21.1              |Manifest: NOSIGNATURE
+		neoforge-21.1.72-universal.jar                    |NeoForge                      |neoforge                      |21.1.72             |Manifest: NOSIGNATURE
+		Patchouli-1.21-88-NEOFORGE-SNAPSHOT.jar           |Patchouli                     |patchouli                     |1.21-88-NEOFORGE-SNA|Manifest: NOSIGNATURE
+		resourcefullib-neoforge-1.21-3.0.11.jar           |Resourceful Lib               |resourcefullib                |3.0.11              |Manifest: NOSIGNATURE
+		sophisticatedbackpacks-1.21-3.20.17.1113.jar      |Sophisticated Backpacks       |sophisticatedbackpacks        |3.20.17             |Manifest: NOSIGNATURE
+		sophisticatedcore-1.21-0.6.45.722.jar             |Sophisticated Core            |sophisticatedcore             |0.6.45              |Manifest: NOSIGNATURE
+		Terralith_1.21.x_v2.5.5.jar                       |Terralith                     |terralith                     |2.5.5               |Manifest: NOSIGNATURE
+		waystones-neoforge-1.21.1-21.1.4.jar              |Waystones                     |waystones                     |21.1.4              |Manifest: NOSIGNATURE
+		Xaeros_Minimap_24.5.0_NeoForge_1.21.jar           |Xaero's Minimap               |xaerominimap                  |24.5.0              |Manifest: NOSIGNATURE
+	Crash Report UUID: 25477686-1510-46fb-a523-52433b0a02da
+	FML: 4.0.29
+	NeoForge: 21.1.72

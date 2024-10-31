@@ -1,0 +1,97 @@
+---- Minecraft Crash Report ----
+// I let you down. Sorry :(
+
+Time: 2024-10-22 09:31:32
+Description: Mod loading failures have occurred; consult the issue messages for more details
+
+net.neoforged.neoforge.logging.CrashReportExtender$ModLoadingCrashException: Mod loading has failed
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Mod loading issue for: ars_nouveau --
+Details:
+	Mod file: /C:/Users/hugop/OneDrive/SEPARADO DE MUITO TEMPO ATRAS/Documents/Servidor NeoForge Mods/server/mods/ars_nouveau-1.21.1-5.2.1-all.jar
+	Failure message: Mod ars_nouveau requires curios 1.19-5.0.7.1 or above
+		Currently, curios is not installed
+		
+	Mod version: 5.2.1
+	Mod issues URL: https://github.com/baileyholl/Ars-Nouveau
+	Exception message: <No associated exception found>
+
+-- Mod loading issue for: ars_nouveau --
+Details:
+	Mod file: /C:/Users/hugop/OneDrive/SEPARADO DE MUITO TEMPO ATRAS/Documents/Servidor NeoForge Mods/server/mods/ars_nouveau-1.21.1-5.2.1-all.jar
+	Failure message: Mod ars_nouveau requires jei 1.19-5.0.7.1 or above
+		Currently, jei is not installed
+		
+	Mod version: 5.2.1
+	Mod issues URL: https://github.com/baileyholl/Ars-Nouveau
+	Exception message: <No associated exception found>
+
+-- Mod loading issue for: ars_nouveau --
+Details:
+	Mod file: /C:/Users/hugop/OneDrive/SEPARADO DE MUITO TEMPO ATRAS/Documents/Servidor NeoForge Mods/server/mods/ars_nouveau-1.21.1-5.2.1-all.jar
+	Failure message: Mod ars_nouveau requires geckolib 4.2.1 or above
+		Currently, geckolib is not installed
+		
+	Mod version: 5.2.1
+	Mod issues URL: https://github.com/baileyholl/Ars-Nouveau
+	Exception message: <No associated exception found>
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.1
+	Minecraft Version ID: 1.21.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.5, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 96477304 bytes (92 MiB) / 415236096 bytes (396 MiB) up to 5289017344 bytes (5044 MiB)
+	CPUs: 8
+	Processor Vendor: GenuineIntel
+	Processor Name: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+	Identifier: Intel64 Family 6 Model 140 Stepping 1
+	Microarchitecture: Tiger Lake
+	Frequency (GHz): 2.42
+	Number of physical packages: 1
+	Number of physical CPUs: 4
+	Number of logical CPUs: 8
+	Graphics card #0 name: Intel(R) Iris(R) Xe Graphics
+	Graphics card #0 vendor: Intel Corporation
+	Graphics card #0 VRAM (MiB): 1024.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 30.0.101.3111
+	Memory slot #0 capacity (MiB): 4096.00
+	Memory slot #0 clockSpeed (GHz): 3.20
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MiB): 16384.00
+	Memory slot #1 clockSpeed (GHz): 3.20
+	Memory slot #1 type: DDR4
+	Virtual memory max (MiB): 40654.48
+	Virtual memory used (MiB): 24952.93
+	Swap memory total (MiB): 20480.00
+	Swap memory used (MiB): 571.23
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 128501.01, total: 457038.00
+	Space in storage for workdir (MiB): available: 128501.01, total: 457038.00
+	JVM Flags: 0 total; 
+	ModLauncher: 11.0.4+main.d2e20e43
+	ModLauncher launch target: forgeserver
+	ModLauncher services: 
+		sponge-mixin-0.15.2+mixin.0.8.7.jar mixin PLUGINSERVICE 
+		loader-4.0.29.jar slf4jfixer PLUGINSERVICE 
+		loader-4.0.29.jar runtime_enum_extender PLUGINSERVICE 
+		at-modlauncher-10.0.1.jar accesstransformer PLUGINSERVICE 
+		loader-4.0.29.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-11.0.4.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-11.0.4.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		javafml@4.0
+		lowcodefml@4.0
+		minecraft@4.0
+	Mod List: 
+		server-1.21.1-20240808.144430-srg.jar             |Minecraft                     |minecraft                     |1.21.1              |Manifest: NOSIGNATURE
+		neoforge-21.1.72-universal.jar                    |NeoForge                      |neoforge                      |21.1.72             |Manifest: NOSIGNATURE
